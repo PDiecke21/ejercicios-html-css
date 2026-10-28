@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 - Horario de Clase</title>
+    <style>
+        /* Configuración general de la tabla */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 12px;
+            font-weight: bold;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        
+        /* Fila del recreo con colspan */
+        .recreo {
+            background-color: #e0e0e0;
+            color: #333;
+            font-style: italic;
+            letter-spacing: 2px;
+        }
+
+        /* Colores diferenciados por asignatura */
+        .aw { background-color: #7ec4cf; color: #000; } /* Aplicaciones Web (Azul claro) */
+        .sor { background-color: #9cb86a; color: #000; } /* Sistemas Operativos en Red (Verde oliva) */
+        .pi { background-color: #d17ea1; color: #000; } /* Proyecto Intermodular (Rosa) */
+        .si { background-color: #6fb1a5; color: #000; } /* Seguridad Informática (Turquesa) */
+        .ipe { background-color: #dfba95; color: #000; } /* Itinerario Personal Empleabilidad (Arena) */
+        .sr { background-color: #999be3; color: #000; } /* Servicios en Red (Morado) */
+        .ing { background-color: #8ed49d; color: #000; } /* Inglés Profesional GM (Verde claro) */
+        .prog { background-color: #7e8cd1; color: #000; } /* Optativa-Iniciación Programación (Azul lavanda) */
+    </style>
+</head>
+<body>
+
+    <h1>Horario de Clase</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Primera Hora -->
+            <tr>
+                <td>15:15 - 16:15</td>
+                <td class="aw">Aplicaciones Web</td>
+                <td class="si">Seguridad Informática</td>
+                <td class="ing">Inglés Profesional</td>
+                <td class="sor">Sistemas Operativos en Red</td>
+                <td class="prog">Iniciación a la Programación</td>
+            </tr>
+            <!-- Segunda Hora -->
+            <tr>
+                <td>16:15 - 17:15</td>
+                <td class="aw">Aplicaciones Web</td>
+                <td class="si">Seguridad Informática</td>
+                <td class="ing">Inglés Profesional</td>
+                <td class="sor">Sistemas Operativos en Red</td>
+                <td class="prog">Iniciación a la Programación</td>
+            </tr>
+            <!-- Tercera Hora -->
+            <tr>
+                <td>17:15 - 18:15</td>
+                <td class="pi">Proyecto Intermodular</td>
+                <td class="ipe">Itinerario Personal Empleabilidad II</td>
+                <td class="ipe">Itinerario Personal Empleabilidad II</td>
+                <td class="sor">Sistemas Operativos en Red</td>
+                <td class="prog">Iniciación a la Programación</td>
+            </tr>
+            
+            <!-- RECREO - Utiliza colspan="6" para ocupar todas las columnas -->
+            <tr>
+                <td class="recreo" colspan="6">RECREO (18:15 - 18:30)</td>
+            </tr>
+            
+            <!-- Cuarta Hora -->
+            <tr>
+                <td>18:30 - 19:30</td>
+                <td class="sor">Sistemas Operativos en Red</td>
+                <td class="ipe">Itinerario Personal Empleabilidad II</td>
+                <td class="pi">Proyecto Intermodular</td>
+                <td class="sr">Servicios en Red</td>
+                <td class="sr">Servicios en Red</td>
+            </tr>
+            <!-- Quinta Hora -->
+            <tr>
+                <td>19:30 - 20:30</td>
+                <td class="sor">Sistemas Operativos en Red</td>
+                <td class="sr">Servicios en Red</td>
+                <td class="aw">Aplicaciones Web</td>
+                <td class="si">Seguridad Informática</td>
+                <td class="sr">Servicios en Red</td>
+            </tr>
+            <!-- Sexta Hora -->
+            <tr>
+                <td>20:30 - 21:30</td>
+                <td class="sor">Sistemas Operativos en Red</td>
+                <td class="sr">Servicios en Red</td>
+                <td class="aw">Aplicaciones Web</td>
+                <td class="si">Seguridad Informática</td>
+                <td class="sr">Servicios en Red</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Datos del alumno requeridos -->
+    <h2>Alumno: Pablo Diecke López</h2>
+
+    <!-- Requisito del GIF animado -->
+    <!-- Reemplaza "enlace_de_tu_gif.gif" por la URL del GIF que quieras mostrar -->
+    <img src="https://giphy.com" alt="GIF Animado Escolar" width="300">
+
+</body>
+</html>

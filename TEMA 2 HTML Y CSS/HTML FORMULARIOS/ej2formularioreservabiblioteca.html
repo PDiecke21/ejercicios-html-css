@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva de Libros</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 8px;
+        }
+
+
+        .estado-pendiente {
+            background-color: yellow;
+        }
+
+        .estado-confirmada {
+            background-color: green;
+            color: white;
+        }
+
+        .estado-entregada {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <form action="" method="POST">
+
+        <p>
+            <label>Nombre del usuario:</label><br>
+            <input type="text" name="usuario">
+        </p>
+
+        <p>
+            <label>Número de socio:</label><br>
+            <input type="text" name="socio">
+        </p>
+
+        <p>
+            <label>Correo electrónico:</label><br>
+            <input type="email" name="correo">
+        </p>
+
+        <p>
+            <label>Título del libro:</label><br>
+            <input type="text" name="libro">
+        </p>
+
+        <p>
+            <label>Autor:</label><br>
+            <input type="text" name="autor">
+        </p>
+
+        <p>
+            <label>Fecha de reserva:</label><br>
+            <input type="date" name="fecha_reserva">
+        </p>
+
+        <p>
+            <label>Fecha prevista de recogida:</label><br>
+            <input type="date" name="fecha_recogida">
+        </p>
+
+        <p>
+            <label>Tipo de préstamo:</label><br>
+            <input type="radio" name="tipo_prestamo" value="sala"> Sala
+            <input type="radio" name="tipo_prestamo" value="domicilio"> Domicilio
+        </p>
+
+        <p>
+            <label>Comentarios adicionales:</label><br>
+            <textarea name="comentarios" rows="4" cols="40"></textarea>
+        </p>
+
+        <!-- Botón para enviar y botón para limpiar -->
+        <button type="submit">Enviar reserva</button>
+        <button type="reset">Limpiar campos</button>
+        </fieldset>
+    </form>
+
+    <br>
+
+
+    <div>
+        <label>Buscar reserva por número de socio: </label>
+        <input type="text" name="buscar">
+        <button type="button">Buscar</button>
+    </div>
+
+    <br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>N.º reserva</th>
+                <th>Usuario</th>
+                <th>Libro</th>
+                <th>Fecha de reserva</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ana López</td>
+                <td>El principito</td>
+                <td>14/10/2026</td>
+                <td class="estado-pendiente">Pendiente</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Pablo Ruiz</td>
+                <td>La sombra del viento</td>
+                <td>13/10/2026</td>
+                <td class="estado-confirmada">Confirmada</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Marta Díaz</td>
+                <td>Don Quijote</td>
+                <td>12/10/2026</td>
+                <td class="estado-entregada">Entregada</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Luis Martín</td>
+                <td>Cien años de soledad</td>
+                <td>11/10/2026</td>
+                <td class="estado-pendiente">Pendiente</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

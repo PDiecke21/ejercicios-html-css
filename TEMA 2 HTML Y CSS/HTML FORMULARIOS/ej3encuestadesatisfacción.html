@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Opinión del Servicio</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .puntos-alta {
+            background-color: lightgreen;
+        }
+
+        .puntos-media {
+            background-color: lightyellow;
+        }
+
+        .puntos-baja {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Encuesta de Satisfacción</h1>
+
+    <form action="" method="POST">
+        <p>
+            <label>Nombre del cliente (opcional):</label><br>
+            <input type="text" name="cliente">
+        </p>
+
+        <p>
+            <label>Servicio utilizado:</label><br>
+            <input type="text" name="servicio">
+        </p>
+
+        <p>
+            <label>Valoración general del 1 al 5:</label><br>
+            <input type="number" name="valoracion" min="1" max="5">
+        </p>
+
+        <p>
+            <label>Aspectos que más le han gustado:</label><br>
+            <input type="checkbox" name="aspectos" value="atencion"> Atención <br>
+            <input type="checkbox" name="aspectos" value="rapidez"> Rapidez <br>
+            <input type="checkbox" name="aspectos" value="precio"> Precio <br>
+            <input type="checkbox" name="aspectos" value="calidad"> Calidad
+        </p>
+
+        <p>
+            <label>¿Recomendaría el servicio?</label><br>
+            <input type="radio" name="recomienda" value="Sí"> Sí
+            <input type="radio" name="recomienda" value="No"> No
+        </p>
+
+        <p>
+            <label>Comentarios:</label><br>
+
+            <textarea name="comentarios" rows="4" cols="40"></textarea>
+        </p>
+
+        <p>
+            <button type="submit">Enviar encuesta</button>
+        </p>
+    </form>
+
+    <h2>Resultados de las Encuestas</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Cliente</th>
+                <th>Servicio</th>
+                <th>Valoración</th>
+                <th>Recomienda</th>
+                <th>Comentarios</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana</td>
+                <td>Reparación</td>
+                <td class="puntos-alta">5</td>
+                <td>Sí</td>
+                <td>Muy buen servicio</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>Instalación</td>
+                <td class="puntos-alta">4</td>
+                <td>Sí</td>
+                <td>Rápido y eficaz</td>
+            </tr>
+            <tr>
+                <td>Lucía</td>
+                <td>Reparación</td>
+                <td class="puntos-media">3</td>
+                <td>No</td>
+                <td>Tardaron demasiado</td>
+            </tr>
+            <tr>
+                <td>Carlos</td>
+                <td>Mantenimiento</td>
+                <td class="puntos-alta">5</td>
+                <td>Sí</td>
+                <td>Excelente atención</td>
+            </tr>
+            <tr>
+                <td>Elena</td>
+                <td>Instalación</td>
+                <td class="puntos-baja">2</td>
+                <td>No</td>
+                <td>Precio elevado</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Resumen de Puntuaciones</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Puntuación</th>
+                <th>Número de clientes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
